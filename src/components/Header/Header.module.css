@@ -4,9 +4,17 @@
   display: flex;
   flex-direction: column;
   height: 200px;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.5;
 }
 
 .header > img {
   width: 60px;
   height: 60px;
+  margin-bottom: 15px;
+}
+
+.header p {
+    margin-bottom: 0;
 }
