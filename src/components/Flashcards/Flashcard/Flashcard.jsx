@@ -1,9 +1,9 @@
-export default function Flashcard({title, description }) {
-	return (
-		<article className="flashacard">
-	
-			<h3>{title}</h3>
-			<p>{description}</p>
-		</article>
-	);
+export default function Flashcard({ title, question, answer }) {
+    return (
+        <article className="flashcard">
+            <p className="cross">❌</p>
+            <h3>{title}</h3>
+            <p>{question}</p>
+        </article>
+    );
 }
