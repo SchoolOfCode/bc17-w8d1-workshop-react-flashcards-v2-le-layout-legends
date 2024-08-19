@@ -1,5 +1,5 @@
 import React from "react";
-import "./FlashcardsContainer.module.css";
+import styles from "./FlashcardsContainer.module.css";
 import Flashcard from "../Flashcard/Flashcard";
 
 let questions = [
@@ -20,20 +20,20 @@ let questions = [
     }
 ];
 
-export default function FlashcardsContainer() {
-    return <main>FlashcardsContainer</main>;
-}
-
-
 // export default function FlashcardsContainer() {
-// 	return (
-// 		<main id="flashcardsContainer" className="flashcardsContainer">
-
-// 			<div className="flashcards">
-// 				{questions.map(({ title, question }) => {
-// 					return <Flashcard title={title} question={question} answer={answer} />;
-// 				})}
-// 			</div>
-// 		</main>
-// 	);
+//     return <main>FlashcardsContainer</main>;
 // }
+
+
+export default function FlashcardsContainer() {
+	return (
+		<main className={styles.flashcardsContainer}>
+
+			<div className={styles.flashcards}>
+				{questions.map(({ title, question, answer }) => {
+					return <Flashcard title={title} question={question} answer={answer}/>;
+				})}
+			</div>
+		</main>
+	);
+}

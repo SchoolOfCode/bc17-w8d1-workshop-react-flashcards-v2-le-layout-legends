@@ -1,0 +1,9 @@
+.flashcards {
+    display: flex;
+    
+    flex: 1 1 30%;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    background-color: red;
+}

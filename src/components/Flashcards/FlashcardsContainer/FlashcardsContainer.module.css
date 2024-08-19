@@ -3,3 +3,11 @@ main {
     background-color: #232731;
     color: white;
 }
+
+.flashcardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+}
